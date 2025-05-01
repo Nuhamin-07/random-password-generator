@@ -20,7 +20,10 @@ let numPassword = document.getElementById("num-pswd")
 let symbolPassword = document.getElementById("symbol-pswd")
 let generatePasswordBtn = document.getElementById("generate-pswd-btn")
 
-let passwordOne = 0
+
+
+generatePasswordBtn.addEventListener("click", function() {
+    let passwordOne = 0
     let passwordTwo = 0
     let btnOnePswdAuto = ""
     let btnTwoPswdAuto = ""
@@ -28,8 +31,6 @@ let passwordOne = 0
     let btnTwoPswd = ""
     btnOne.textContent = ""
     btnTwo.textContent = ""
-
-generatePasswordBtn.addEventListener("click", function() {
     
     if (pswdLengthInput.length > 2) {
       pswdLengthInput = pswdLengthInput.slice(0, 2);
