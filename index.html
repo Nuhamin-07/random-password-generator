@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Generate a <br/><span id="header-span-color">random password</span></h2>
+            <p>Never use an insecure password again.</p>
+            <p id="p-el">You can enter your preferred password length (should be between 4 and 20) otherwise it will geerate with default length(15)</p>
+            <label>Password length</label>
+            <input 
+                id="pswd-length-input" 
+                type="text" 
+                inputmode="numeric"
+                maxlength="2"
+                min="4" 
+                max="20" 
+                /> <br/>
+            <label>
+                <input type="checkbox" class="checkbox-el" id="num-pswd"/> 
+                Include numbers
+            </label>
+            
+             <label>
+                <input type="checkbox" class="checkbox-el" id="symbol-pswd"/>
+                Include symbols
+             </label>
+             
+            <br/>
+            <button id="generate-pswd-btn" onclick="generatePassword()">Generate passwords</button>
+            <hr/>
+            <div class="btn-container">
+                <button class="generated-pswd-btn" id="btn-one" onclick="copyPasswordOne()"></button>
+                <button class="generated-pswd-btn" id="btn-two" onclick="copyPasswordTwo()"></button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
