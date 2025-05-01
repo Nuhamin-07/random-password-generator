@@ -18,10 +18,9 @@ let pswdLengthInput = document.getElementById("pswd-length-input")
 
 let numPassword = document.getElementById("num-pswd")
 let symbolPassword = document.getElementById("symbol-pswd")
+let generatePasswordBtn = document.getElementById("generate-pswd-btn")
 
-
-function generatePassword() {
-    let passwordOne = 0
+let passwordOne = 0
     let passwordTwo = 0
     let btnOnePswdAuto = ""
     let btnTwoPswdAuto = ""
@@ -29,6 +28,9 @@ function generatePassword() {
     let btnTwoPswd = ""
     btnOne.textContent = ""
     btnTwo.textContent = ""
+
+generatePasswordBtn.addEventListener("click", function() {
+    
     if (pswdLengthInput.length > 2) {
       pswdLengthInput = pswdLengthInput.slice(0, 2);
     }
@@ -56,7 +58,7 @@ function generatePassword() {
     // console.log(symbolPassword.checked)
     
     
-}
+})
 
 function copyPasswordOne() {
     navigator.clipboard.writeText(btnOne.textContent)
