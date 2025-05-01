@@ -23,10 +23,10 @@ let symbolPassword = document.getElementById("symbol-pswd")
 function generatePassword() {
     let passwordOne = 0
     let passwordTwo = 0
-    btnOnePswdAuto = ""
-    btnTwoPswdAuto = ""
-    btnOnePswd = ""
-    btnTwoPswd = ""
+    let btnOnePswdAuto = ""
+    let btnTwoPswdAuto = ""
+    let btnOnePswd = ""
+    let btnTwoPswd = ""
     btnOne.textContent = ""
     btnTwo.textContent = ""
     if (pswdLengthInput.length > 2) {
